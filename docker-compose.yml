@@ -8,4 +8,4 @@ services:
       context: .
       dockerfile: ./Dockerfile
     volumes:
-      - ./results:/usr/app/scripts/chainlink.json
+      - ./result:/usr/app/result

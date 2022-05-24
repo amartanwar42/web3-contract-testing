@@ -21,4 +21,4 @@ jobs:
         if: always()
         with:
           name: chainlink.json
-          path: results
+          path: result

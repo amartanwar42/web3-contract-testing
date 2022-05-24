@@ -48,20 +48,9 @@ async function main() {
 		'getBytes32 value is': getBytes32,
 		'getUint256 value is': getUint256,
 	};
-	fs.writeFileSync(path.resolve(__dirname, 'chainlink.json'), JSON.stringify(jsonObject));
-	console.log('JSON file generated and its path is ', path.join(__dirname, 'chainlink.json'));
+	fs.writeFileSync(path.resolve('result', 'chainlink.json'), JSON.stringify(jsonObject));
+	console.log('JSON file chainlink.json is generated');
 }
-
-writeToJSON = (contractAddress, deployerAddress, getBytes, getBytes32, getUint256) => {
-	let jsonObject = {
-		'GetterSetter contract deployed to': contractAddress,
-		'deployer address is': deployerAddress,
-		'getBytes value is': getBytes,
-		'getBytes32 value is': getBytes32,
-		'getUint256 value is': getUint256,
-	};
-	fs.writeFileSync(path.resolve(__dirname, 'chainlink.json'), JSON.stringify(jsonObject));
-};
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
