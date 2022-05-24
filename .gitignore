@@ -5,6 +5,7 @@ coverage.json
 typechain
 package-lock.json
 result/chainlink.json
+.DS_Store
 
 #Hardhat files
 cache

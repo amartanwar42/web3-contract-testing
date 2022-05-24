@@ -1,15 +1,37 @@
-# Basic Sample Hardhat Project
+<!-- @format -->
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+# Chainlink QA Assignment
 
-Try running some of the following tasks:
+### This project uses the Hardhat to deploy the contract and it does following:
+
+- Deploying `GetterSetter` contract to `Kovan` network.
+- Performing all `getter` and `setter` operations
+- Printing deployed address and the value set in the console.
+- Storing following information in JSON file.
+  - GetterSetter contract deployed address
+  - Deployer address
+  - Value set
+
+## Project features :
+
+- Dockerized using `Dockerfile` and `docker-compose.yml`.
+- Linked with `Github Actions`
+  - Perform deployment upon each commit.
+  - Performing all getter setter operations and printing result in console.
+  - Writing and publishing JSON file in the artifacts
+
+### Steps to deploy contract, run getter setter operations and writing data into JSON file manually:
 
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat run  scripts/deploy-script.js
 ```
+
+- Generated JSON `chainlink.json` can be found in the `result` folder in the root of the project
+
+## References screenshots:
+
+Artifacts > JSON file
+![Screenshot](screenshots/artifact.png)
+
+Console print
+![Screenshot](screenshots/print.png)

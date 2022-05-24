@@ -1,4 +1,4 @@
-FROM node
+FROM node:16.3.0-alpine
 LABEL maintainer="amar"
 
 WORKDIR /usr/app
