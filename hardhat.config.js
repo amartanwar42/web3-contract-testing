@@ -26,7 +26,7 @@ module.exports = {
 		kovan: {
 			url: 'https://speedy-nodes-nyc.moralis.io/6c731eae87f0af4c9eed8dc6/eth/kovan',
 			accounts: ['608f631c4452b283b437fb2f65f242ea74bd09f8ab5ac138c66bd66aa15eab07'],
-			gasPrice: 85000000000000000,
+			gasPrice: 85000000,
 		},
 	},
 	mocha: {
