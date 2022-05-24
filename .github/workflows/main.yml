@@ -9,16 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16.13.0
+          node-version: 16
       - name: Build image
         run: npm run ci:build
       - name: Deploy Contract and generate JSON
         run: npm run ci:deploy
-      - uses: actions/upload-artifact@v1
-        if: always()
-        with:
-          name: chainlink.json
-          path: artifacts
+      # - uses: actions/upload-artifact@v1
+      #   if: always()
+      #   with:
+      #     name: chainlink.json
+      #     path: artifacts

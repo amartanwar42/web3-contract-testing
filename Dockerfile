@@ -11,7 +11,7 @@ COPY . .
 
 CMD npx hardhat run  scripts/sample-script.js
 
-VOLUME /artifacts
+# VOLUME /artifacts
 
-COPY /usr/app/scripts/chainlink.json /artifacts
+# COPY /usr/app/scripts/chainlink.json /artifacts
 
