@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "npx hardhat test",
-		"ci:build": "docker build --tag chainin-qa-assignment .",
-		"ci:deploy": "docker run chainin-qa-assignment:latest"
+		"ci:build": "docker-compose -f docker-compose.yml build",
+		"ci:deploy": "docker-compose -f docker-compose.yml up --force-recreate --renew-anon-volumes --abort-on-container-exit --exit-code-from deploy"
 	},
 	"author": "",
 	"license": "ISC",

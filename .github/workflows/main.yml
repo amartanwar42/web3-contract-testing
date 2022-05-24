@@ -17,8 +17,8 @@ jobs:
         run: npm run ci:build
       - name: Deploy Contract and generate JSON
         run: npm run ci:deploy
-      # - uses: actions/upload-artifact@v1
-      #   if: always()
-      #   with:
-      #     name: chainlink.json
-      #     path: artifacts
+      - uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: chainlink.json
+          path: results

@@ -1,0 +1,11 @@
+# @format
+
+version: '3'
+services:
+  deploy:
+    container_name: chainlink-qa-assignment
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./results:/usr/app/scripts/chainlink.json
