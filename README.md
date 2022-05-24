@@ -20,13 +20,17 @@
   - Performing all getter setter operations and printing result in console.
   - Writing and publishing JSON file in the artifacts
 
-### Steps to deploy contract, run getter setter operations and writing data into JSON file manually:
+## Sample CICD Build link:
+
+https://github.com/amartanwar42/chainlink-qa-assignment/actions/runs/2379564791
+
+### Steps to deploy contract and perform all operations manually:
 
 ```shell
 npx hardhat run  scripts/deploy-script.js
 ```
 
-- Generated JSON `chainlink.json` can be found in the `result` folder in the root of the project
+### Note: Generated JSON `chainlink.json` can be found in the `result` folder in the root of the project
 
 ## References screenshots:
 
