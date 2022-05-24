@@ -1,0 +1,22 @@
+name: chainlink qa assignment
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+          with:
+            node-version: 16.13.0  
+      - name: Build image
+        run: npm run ci:build
+      - name: Deploy Contract and generate JSON
+        run: npm run ci:deploy
+      - uses: actions/upload-artifact@v1
+          if: always()
+          with:
+            name: chainlink.json
+            path: artifacts
