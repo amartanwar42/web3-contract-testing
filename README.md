@@ -22,7 +22,7 @@
 
 ## Sample CICD Build link:
 
-https://github.com/amartanwar42/chainlink-qa-assignment/actions/runs/2379564791
+https://github.com/amartanwar42/web3-contract-testing/actions/runs/2379608100
 
 ### Steps to deploy contract and perform all operations manually:
 
