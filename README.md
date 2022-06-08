@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# Chainlink QA Assignment
+# Contract testing and contract deployment
 
 ### This project uses the Hardhat to deploy the contract and it does following:
 
